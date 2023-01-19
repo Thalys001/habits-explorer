@@ -17,6 +17,10 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 button {
@@ -36,10 +40,17 @@ button {
   line-height: 125%;
 }
 
+button:hover {
+  background-color: #8b5cf6;
+  border: 1px solid #fff;
+}
+
+
 #form-habits {
   display: flex;
 
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -98,8 +109,19 @@ input {
   background: #18181b;
 }
 
+input:hover {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+}
+
 /* psuedo-selector */
 input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+    button div {
+      display: none;
+    }
 }
